@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Metronome">
+
+    <RadioGroup
+        android:id="@+id/time_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="1/4" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="2/4" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="3/4" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="4/4" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time_options"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Off/On" />
+
+    <LinearLayout
+        android:id="@+id/progress_anim_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/example_delete_me"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:padding="4dp"
+            android:src="@android:color/holo_blue_bright" />
+
+        <ImageView
+            android:id="@+id/example_delete_me2"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:padding="4dp"
+            android:src="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/example_delete_me3"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:padding="4dp"
+            android:src="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/example_delete_me4"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_dark"
+            android:padding="4dp"
+            android:src="@android:color/darker_gray" />
+    </LinearLayout>
+</RelativeLayout>
