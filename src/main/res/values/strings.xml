@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tuner</string>
+
+    <string name="blank_start">----</string>
+
+    <string name="background_highlight_content_description">highlight</string>
+</resources>
